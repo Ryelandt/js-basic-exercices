@@ -6,19 +6,61 @@
 // Ecrire une fonction 'hello' qui affiche dans la console "Hello World!"
 
 function hello() {
+
+    console.log ("hello world")
+
 	// write your code HERE
 };
+hello();
+
+
+
+
+var str1= "hello";
+var str2= "world";
+var a = 10;
+var b = 20;
+var a1 = 11;
+var a2 = 12;
+var a3 = 13;
+
+function addition(a, b){// ----
+// écrire des fonctions suivante:
+// addition(a, b)
+	console.log (a+b);
+}
+addition(a,b);
 
 // ----
 // écrire des fonctions suivante:
-// addition(a, b)
+function soustraction(a,b)
+{
 // soustraction(a, b)
-// multiplication(a, b)
-// division(a, b)
-// concatenation(str1, str2)
-// moyenne(a1, a2, a3)
+	console.log (a-b);
+}
+soustraction(a,b);
+   
+function division(a,b)
+{
+// soustraction(a, b)
+	console.log (a/b);
+}
+division(a,b);
 
-// Chaque fonction devra effectuer l'opération correspondant à son nom, et renvoyer le résultat. 
+function concatenation(str1,str2)
+{// concatenation(str1, str2)
+	console.log (str1+str2);
+}
+concatenation(str1,str2);
+
+
+function moyenne(a1,a2,a3)
+{// moyenne(a1, a2, a3)
+	console.log ((a1+a2+a3)/3);
+}
+moyenne(a1,a2,a3);
+
+// Chaque fonction devra effectuerS l'opération correspondant à son nom, et renvoyer le résultat. 
 // Celui-ci sera stocké dans une variable, qui sera ensuite affichée dans la console
  
 // ----
@@ -26,29 +68,45 @@ function hello() {
 // A l'aide d'une variable intermédiaire, inverser les deux valeurs pour que a ait pour valeur 12 et b pour valeur 5
 // Afficher le résultat de a et b dans la console sous la forme d'une phrase: "A vaut : xxx et B vaut yyy"
 var a, b;
-// WRITE YOUR CODE HERE
+a=5;
+b=12;
+a=a-b;
+b=a+b;
+a=b-a;
+console.log("A vaut:" +a+ "B vaut:"+b);
 
 // ----
 // Ecrire une fonction 'isDivisibleBy5' qui reçoit un nombre en paramètre, et qui vérifie que ce nombre est divisible par 5.
 // Cette fonction doit renvoyer un booléen
+var x=10;
 var isDivisibleBy5 = function(x) {
-	// WRITE YOUR CODE HERE
+	
+    console.log(x%5===0);
 };
+isDivisibleBy5(x);
 
 // ----
 // Ecrire une fonction 'isDivisibleByN' qui reçoit deux nombres entiers x et n, et qui vérifie si x est divisible par n.
 // Cette fonction doit renvoyer un booléen
+var x= 10;
+var n = 20;
 function isDivisibleByN(x, n) {
-	// WRITE YOUR CODE HERE
-}
+	   console.log((x/n)===0);
+};
+isDivisibleByN(x,n);
+
 
 // ----
 // Générer un nombre décimal compris entre 0 et 1, et le stocker dans une variable
 // Changer la valeur de cette variable pour qu'elle vaille le nombre initial arrondi à 2 décimales
 // Afficher dans la console
-function genereEtArrondit() {
-  // WRITE YOUR CODE HERE
-}
+ var x= 0.55556;
+
+function genereEtArrondit(x) {
+   console.log(x.toFixed(2));
+     
+};
+genereEtArrondit(x);
 
 
 /**
