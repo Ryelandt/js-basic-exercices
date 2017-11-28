@@ -24,6 +24,7 @@ var a1 = 11;
 var a2 = 12;
 var a3 = 13;
 
+
 function addition(a, b){// ----
 // écrire des fonctions suivante:
 // addition(a, b)
@@ -73,17 +74,18 @@ b=12;
 a=a-b;
 b=a+b;
 a=b-a;
+
 console.log("A vaut:" +a+ "B vaut:"+b);
 
 // ----
 // Ecrire une fonction 'isDivisibleBy5' qui reçoit un nombre en paramètre, et qui vérifie que ce nombre est divisible par 5.
 // Cette fonction doit renvoyer un booléen
-var x=10;
-var isDivisibleBy5 = function(x) {
+
+var isDivisibleBy5= function (x) {
 	
-    console.log(x%5===0);
+    console.log(x%5==0);
 };
-isDivisibleBy5(x);
+isDivisibleBy5(10);
 
 // ----
 // Ecrire une fonction 'isDivisibleByN' qui reçoit deux nombres entiers x et n, et qui vérifie si x est divisible par n.
@@ -112,18 +114,41 @@ genereEtArrondit(x);
 /**
 * Exercices sur les chaînes de caractères
 **/
-
 // ----
 // Ecrire une fonction qui reçoit une chaîne de caractères, et qui renvoie la position 
 // de la première occurence de la lettre 'e' dans cette chaîne
+var y = 'anticonstitutionnellement';
+
+function chaineCaract(y) {
+     console.log(y.indexOf('e'));
+ 
+};
+chaineCaract(y);
+
 
 // ----
 // Ecrire une fonction qui reçoit une chaîne de caractères, et qui renvoie la position 
 // de la dernière occurence de la lettre 'e' dans cette chaîne
-
+var z = 'anticonstitutionnellement';
+  function chaineCaractere(z) {
+     console.log(z.lastIndexOf('e'));
+ 
+};
+chaineCaractere(z);
 // ----
 // Ecrire une fonction qui reçoit une chaîne de caractères contenant une prhase entière, 
 // et qui renvoie un tableau contenant chacun des différents mots dans la phrase
+
+var string = "i am the best of the world";
+function sentence(table)
+{   
+	var table = string.split(" ");
+	console.log(table);
+
+	
+};
+ sentence(table);
+
 
 // ----
 // Ecrire une fonction qui reçoit une chaîne de caractère, qui transforme 
