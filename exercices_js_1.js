@@ -29,7 +29,7 @@ function addition(a, b){// ----
 // écrire des fonctions suivante:
 // addition(a, b)
 	console.log (a+b);
-}
+};
 addition(a,b);
 
 // ----
@@ -38,27 +38,27 @@ function soustraction(a,b)
 {
 // soustraction(a, b)
 	console.log (a-b);
-}
+};
 soustraction(a,b);
    
 function division(a,b)
 {
 // soustraction(a, b)
 	console.log (a/b);
-}
+};
 division(a,b);
 
 function concatenation(str1,str2)
 {// concatenation(str1, str2)
 	console.log (str1+str2);
-}
+};
 concatenation(str1,str2);
 
 
 function moyenne(a1,a2,a3)
 {// moyenne(a1, a2, a3)
 	console.log ((a1+a2+a3)/3);
-}
+};
 moyenne(a1,a2,a3);
 
 // Chaque fonction devra effectuerS l'opération correspondant à son nom, et renvoyer le résultat. 
@@ -147,7 +147,7 @@ function sentence(table)
 
 	
 };
- sentence(table);
+ sentence("");
 
 
 // ----
